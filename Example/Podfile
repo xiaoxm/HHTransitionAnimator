@@ -4,7 +4,9 @@ platform :ios, '8.0'
 
 target 'HHTransitionAnimator_Example' do
   pod 'HHTransitionAnimator', :path => '../'
+  pod 'Masonry', '~> 1.1.0'
 
+  
   target 'HHTransitionAnimator_Tests' do
     inherit! :search_paths
 

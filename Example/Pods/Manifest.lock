@@ -1,0 +1,23 @@
+PODS:
+  - HHTransitionAnimator (0.1.0)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - HHTransitionAnimator (from `../`)
+  - Masonry (~> 1.1.0)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  HHTransitionAnimator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HHTransitionAnimator: 5c4b423eaaca04f2451eee1311be31dbcefa4af5
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 7073618168f904fc31725bcc2e77484da0595042
+
+COCOAPODS: 1.9.1

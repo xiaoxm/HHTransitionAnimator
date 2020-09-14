@@ -1,0 +1,6 @@
+framework module HHTransitionAnimator {
+  umbrella header "HHTransitionAnimator-umbrella.h"
+
+  export *
+  module * { export * }
+}

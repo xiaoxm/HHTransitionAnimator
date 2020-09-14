@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		0DABAE1248030AA29E3DE2D5 /* Pods_HHTransitionAnimator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BB01E387B025A2808639C9 /* Pods_HHTransitionAnimator_Example.framework */; };
 		1ED2DC2B92116D2B6E4D5EC7 /* Pods_HHTransitionAnimator_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADDF0C4246B73F161A06AC2 /* Pods_HHTransitionAnimator_Tests.framework */; };
+		49CA67A3250F5CB40051FD25 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49CA67A2250F5CB40051FD25 /* 1.jpg */; };
+		49CA67A9250F5D640051FD25 /* HHFadeTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CA67A5250F5D640051FD25 /* HHFadeTransitionAnimator.m */; };
+		49CA67AA250F5D640051FD25 /* HHMoveTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CA67A8250F5D640051FD25 /* HHMoveTransitionAnimator.m */; };
+		49CA67B0250F5DA70051FD25 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CA67AE250F5DA70051FD25 /* ListViewController.m */; };
+		49CA67B3250F5DAE0051FD25 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CA67B1250F5DAE0051FD25 /* DetailViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* HHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* HHAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* HHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* HHViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -37,11 +41,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0081185D7CEAE24BF1E72A8D /* HHTransitionAnimator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HHTransitionAnimator.podspec; path = ../HHTransitionAnimator.podspec; sourceTree = "<group>"; };
+		0081185D7CEAE24BF1E72A8D /* HHTransitionAnimator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HHTransitionAnimator.podspec; path = ../HHTransitionAnimator.podspec; sourceTree = "<group>"; };
 		49BB01E387B025A2808639C9 /* Pods_HHTransitionAnimator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHTransitionAnimator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49CA67A2250F5CB40051FD25 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		49CA67A5250F5D640051FD25 /* HHFadeTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHFadeTransitionAnimator.m; sourceTree = "<group>"; };
+		49CA67A6250F5D640051FD25 /* HHMoveTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMoveTransitionAnimator.h; sourceTree = "<group>"; };
+		49CA67A7250F5D640051FD25 /* HHFadeTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHFadeTransitionAnimator.h; sourceTree = "<group>"; };
+		49CA67A8250F5D640051FD25 /* HHMoveTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMoveTransitionAnimator.m; sourceTree = "<group>"; };
+		49CA67AD250F5DA70051FD25 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		49CA67AE250F5DA70051FD25 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		49CA67B1250F5DAE0051FD25 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		49CA67B2250F5DAE0051FD25 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		4A52DB7BBE7C32EE4828C058 /* Pods-HHTransitionAnimator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTransitionAnimator_Example.release.xcconfig"; path = "Target Support Files/Pods-HHTransitionAnimator_Example/Pods-HHTransitionAnimator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5ADDF0C4246B73F161A06AC2 /* Pods_HHTransitionAnimator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHTransitionAnimator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FC702DEDC15CFD47C5EFE42 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5FC702DEDC15CFD47C5EFE42 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HHTransitionAnimator_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHTransitionAnimator_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,8 +65,6 @@
 		6003F59B195388D20070C39A /* HHTransitionAnimator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHTransitionAnimator-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* HHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* HHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* HHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* HHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* HHTransitionAnimator_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHTransitionAnimator_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -65,7 +76,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		910F42C326825F11BB90C21C /* Pods-HHTransitionAnimator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTransitionAnimator_Tests.release.xcconfig"; path = "Target Support Files/Pods-HHTransitionAnimator_Tests/Pods-HHTransitionAnimator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C98B33B64A3A8B5DCAEDE1D3 /* Pods-HHTransitionAnimator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTransitionAnimator_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HHTransitionAnimator_Tests/Pods-HHTransitionAnimator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C9EB4D5ABCD7BDB4230C9D58 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C9EB4D5ABCD7BDB4230C9D58 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DFEC89527A4B07F06222080E /* Pods-HHTransitionAnimator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTransitionAnimator_Example.debug.xcconfig"; path = "Target Support Files/Pods-HHTransitionAnimator_Example/Pods-HHTransitionAnimator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +106,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49CA67A4250F5D640051FD25 /* CustomTransitionAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				49CA67A7250F5D640051FD25 /* HHFadeTransitionAnimator.h */,
+				49CA67A5250F5D640051FD25 /* HHFadeTransitionAnimator.m */,
+				49CA67A6250F5D640051FD25 /* HHMoveTransitionAnimator.h */,
+				49CA67A8250F5D640051FD25 /* HHMoveTransitionAnimator.m */,
+			);
+			path = CustomTransitionAnimator;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -135,10 +157,14 @@
 				6003F59C195388D20070C39A /* HHAppDelegate.h */,
 				6003F59D195388D20070C39A /* HHAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* HHViewController.h */,
-				6003F5A6195388D20070C39A /* HHViewController.m */,
+				49CA67AD250F5DA70051FD25 /* ListViewController.h */,
+				49CA67AE250F5DA70051FD25 /* ListViewController.m */,
+				49CA67B2250F5DAE0051FD25 /* DetailViewController.h */,
+				49CA67B1250F5DAE0051FD25 /* DetailViewController.m */,
+				49CA67A4250F5D640051FD25 /* CustomTransitionAnimator */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				49CA67A2250F5CB40051FD25 /* 1.jpg */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for HHTransitionAnimator";
@@ -193,7 +219,6 @@
 				C98B33B64A3A8B5DCAEDE1D3 /* Pods-HHTransitionAnimator_Tests.debug.xcconfig */,
 				910F42C326825F11BB90C21C /* Pods-HHTransitionAnimator_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +283,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -281,6 +307,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				49CA67A3250F5CB40051FD25 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,10 +374,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HHTransitionAnimator_Example/Pods-HHTransitionAnimator_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HHTransitionAnimator/HHTransitionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HHTransitionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,8 +394,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* HHAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* HHViewController.m in Sources */,
+				49CA67B0250F5DA70051FD25 /* ListViewController.m in Sources */,
+				49CA67B3250F5DAE0051FD25 /* DetailViewController.m in Sources */,
+				49CA67AA250F5D640051FD25 /* HHMoveTransitionAnimator.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				49CA67A9250F5D640051FD25 /* HHFadeTransitionAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +529,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HHTransitionAnimator/HHTransitionAnimator-Prefix.pch";
 				INFOPLIST_FILE = "HHTransitionAnimator/HHTransitionAnimator-Info.plist";
+				MARKETING_VERSION = 0.1.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +546,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HHTransitionAnimator/HHTransitionAnimator-Prefix.pch";
 				INFOPLIST_FILE = "HHTransitionAnimator/HHTransitionAnimator-Info.plist";
+				MARKETING_VERSION = 0.1.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
