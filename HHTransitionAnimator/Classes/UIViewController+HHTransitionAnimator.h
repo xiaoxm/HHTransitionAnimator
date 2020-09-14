@@ -11,9 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIViewController (HHTransitionAnimator) <UIViewControllerTransitioningDelegate>
+@interface UIViewController (HHTransitionAnimator)
 
-@property (nonatomic, strong) HHTransitionAnimator *hh_transitionAnimator;
+- (void)hh_presentViewController:(UIViewController *)vc animated:(BOOL)flag animator:(HHTransitionAnimator *)animator completion:(void (^ __nullable)(void))completion;
 
 @end
 

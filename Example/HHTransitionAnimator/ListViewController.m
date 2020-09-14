@@ -22,11 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-//    self.hh_transitionAnimator = [HHFadeTransitionAnimator new];  //渐变
-    self.hh_transitionAnimator = [HHMoveTransitionAnimator new];    //移动
-    
 
     UITableView *tableView = [UITableView new];
     tableView.delegate = self;
@@ -41,6 +36,9 @@
 
 }
 
+
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 10;
@@ -53,7 +51,10 @@
 {
 
     self.currentCell = [tableView cellForRowAtIndexPath:indexPath];
-    [self presentViewController:[DetailViewController new] animated:YES completion:nil];
+    
+    
+    HHTransitionAnimator *animator = [HHMoveTransitionAnimator new];
+    [self hh_presentViewController:[DetailViewController new] animated:YES animator:animator completion:nil];
 
 }
 @end

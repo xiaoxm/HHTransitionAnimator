@@ -11,26 +11,17 @@
 
 @implementation UIViewController (HHTransitionAnimator)
 
-+ (void)load
+- (void)hh_presentViewController:(UIViewController *)vc animated:(BOOL)flag animator:(HHTransitionAnimator *)animator completion:(void (^ __nullable)(void))completion;
 {
-    Method original = class_getInstanceMethod([self class], @selector(presentViewController:animated:completion:));
-    Method new = class_getInstanceMethod([self class], @selector(hh_presentViewController:animated:completion:));
-    method_exchangeImplementations(original, new);
-}
-
-
-- (void)hh_presentViewController:(UIViewController *)vc animated:(BOOL)flag completion:(void (^ __nullable)(void))completion;
-{
-    if(self.hh_transitionAnimator){
-        self.hh_transitionAnimator.gestureVC = vc;
-        vc.transitioningDelegate = self.hh_transitionAnimator;
-        vc.modalPresentationStyle = UIModalPresentationCustom;
-    }
-    
+    self.hh_transitionAnimator = animator;
+    self.hh_transitionAnimator.gestureVC = vc;
+    vc.transitioningDelegate = self.hh_transitionAnimator;
+    vc.modalPresentationStyle = UIModalPresentationCustom;
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self hh_presentViewController:vc animated:flag completion:completion];
+        [self presentViewController:vc animated:flag completion:completion];
     });
 }
+
 
 #pragma mark - getter & setter
 - (void)setHh_transitionAnimator:(HHTransitionAnimator *)hh_transitionAnimator
