@@ -9,6 +9,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+说明文档在[这里](https://www.jianshu.com/p/ea3da1aea69d)
+
 ## Requirements
 
 ## Installation
